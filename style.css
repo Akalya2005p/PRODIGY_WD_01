@@ -1,0 +1,600 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #007bff; /* Blue background for other sections */
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+/* Navbar Styling */
+.navbar {
+    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    padding: 15px 20px; /* Adjusted spacing */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 24px; /* Increased font size */
+    font-weight: bold;
+    color: white !important;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar-nav .nav-item {
+    padding: 5px 10px;
+}
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px; /* Increased font size */
+    padding: 12px 18px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Glow Effect on Hover */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Blue text color */
+    text-shadow: 0 0 10px #007bff, 0 0 20px #007bff; /* Glow effect */
+}
+
+/* Active Link */
+.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link.active {
+    color: #0056b3;
+    text-shadow: 0 0 12px #0056b3, 0 0 25px #0056b3; /* Stronger glow */
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        gap: 10px;
+    }
+    .navbar-nav .nav-item {
+        padding: 8px 0;
+    }
+}
+
+
+/* Navbar Brand Styling */
+.navbar-brand {
+    font-size: 26px; /* Larger text */
+    font-weight: bold;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* AI Icon Styling */
+.navbar-brand i {
+    font-size: 30px; /* Larger AI icon */
+    color: #007bff; /* Blue color */
+    margin-right: 10px; /* Space between icon and text */
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.navbar-brand:hover {
+    color: #00aaff !important;
+    text-shadow: 0 0 15px #00aaff, 0 0 25px #00aaff; /* Glow effect */
+}
+
+.navbar-brand:hover i {
+    color: #00aaff; /* Light blue icon */
+    transform: rotate(10deg) scale(1.1); /* Slight rotation & scale effect */
+    text-shadow: 0 0 12px #00aaff, 0 0 22px #00aaff;
+}
+
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-color: black; /* Black background */
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* About Section Styling */
+.about-section {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 80px 0;
+}
+
+/* Image Styling */
+.about-img {
+    width: 100%;
+    max-width: 450px; /* Max size for large screens */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #007bff;
+}
+
+/* Section Text */
+.section-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .about-section .row {
+        flex-direction: column-reverse; /* Stack text first, image below */
+        text-align: center;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* AI Card Styling */
+.ai-card {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ai-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image */
+.ai-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Button Styling */
+.ai-card .btn {
+    background: white;
+    color: #007bff;
+    font-weight: bold;
+    border: none;
+}
+
+.ai-card .btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .about-section .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.ai-tech-section {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 30px;
+}
+
+/*
+.tech-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 220px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.tech-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-front {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back {
+    background: #f8f9fa;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #007bff;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-back p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-back a {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card-back a:hover {
+    background: #0056b3;
+}
+
+*/
+
+
+.tech-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 220px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4); /* Blue shadow */
+    border-radius: 10px;
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 86, 179, 0.6); /* Stronger blue shadow on hover */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+.tech-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.card-front {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.card-back {
+    background: #f8f9fa;
+    color: black;
+    transform: rotateY(180deg);
+    border: 2px solid #007bff;
+    box-shadow: inset 0px 0px 10px rgba(0, 123, 255, 0.3); /* Inner blue shadow */
+    padding: 20px;
+}
+
+.card-back p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-back a {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card-back a:hover {
+    background: #0056b3;
+}
+
+/* Blue shadow effect for the icon */
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4); /* Blue shadow for icons */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tech-card:hover .icon-container {
+    transform: scale(1.2);
+    box-shadow: 0px 6px 15px rgba(0, 86, 179, 0.6); /* Stronger blue shadow on hover */
+}
+
+.icon-container i {
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+
+
+/* AI Frameworks Section */
+#ai-frameworks {
+    background-color: black; /* Dark background */
+    padding: 80px 0;
+}
+
+/* Framework Box Styling */
+.framework-box {
+    background: #1e1e1e; /* Slightly lighter black */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.7); /* Static Blue Shadow */
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    min-height: 300px; /* Ensures all boxes are of equal height */
+    border: 2px solid rgba(0, 170, 255, 0.5); /* Optional blue border */
+}
+
+/* Fixed Image/Icon Size */
+.framework-box img {
+    width: 80px;  /* Fixed width */
+    height: 80px; /* Fixed height */
+    object-fit: contain; /* Ensures the image scales properly */
+    margin-bottom: 15px;
+    filter: brightness(1.2);
+}
+
+/* Title */
+.framework-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+/* Description */
+.framework-box p {
+    color: #aaa;
+}
+
+/* Carousel Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00aaff; /* Bright blue for visibility */
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .framework-box {
+        padding: 20px;
+    }
+    .framework-box h3 {
+        font-size: 1.2rem;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 10px;
+    }
+}
+
+
+
+
+/* AI Podcast Video Grid Section */
+#ai-podcast-grid {
+    background-color: #121212;
+    color: white;
+    padding: 80px 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-item:hover iframe {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+
+/* Footer Section */
+#footer {
+    background: #121212;
+    color: #f1f1f1;
+    padding: 50px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+    margin: 15px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    color: #00ffcc;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    color: #00ffcc;
+}
+
+/* Social Icons */
+.social-links a {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
